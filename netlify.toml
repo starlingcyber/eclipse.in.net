@@ -1,0 +1,7 @@
+[build]
+  base = "web"
+  command = "pnpm turbo run build --filter=./apps/minifront --concurrency=1"
+  publish = "apps/minifront/dist"
+
+[build.environment]
+  NODE_VERSION = "22"
